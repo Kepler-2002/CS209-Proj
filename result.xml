@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="10.3">
 <file name="E:\CS209-project-22fall-master\src\main\java\com\example\springproject\controller\CommitController.java">
-<error line="18" column="1" severity="warning" message="导入组之前的额外空行 &apos;java.io.BufferedReader&apos;。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="18" column="1" severity="warning" message="导入语句&apos;java.io.BufferedReader&apos; 字典顺序错误。应在&apos;org.springframework.web.bind.annotation.RestController&apos;之前。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="19" column="1" severity="warning" message="导入语句&apos;java.io.IOException&apos; 字典顺序错误。应在&apos;org.springframework.web.bind.annotation.RestController&apos;之前。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="20" column="1" severity="warning" message="导入语句&apos;java.io.InputStreamReader&apos; 字典顺序错误。应在&apos;org.springframework.web.bind.annotation.RestController&apos;之前。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="21" column="1" severity="warning" message="导入语句&apos;java.net.HttpURLConnection&apos; 字典顺序错误。应在&apos;org.springframework.web.bind.annotation.RestController&apos;之前。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="22" column="1" severity="warning" message="导入语句&apos;java.net.URL&apos; 字典顺序错误。应在&apos;org.springframework.web.bind.annotation.RestController&apos;之前。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="23" column="1" severity="warning" message="导入语句&apos;java.util.ArrayList&apos; 字典顺序错误。应在&apos;org.springframework.web.bind.annotation.RestController&apos;之前。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="25" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="33" column="3" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="53" column="3" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
-<error line="62" column="11" severity="warning" message="名称 &apos;restURL&apos; 中不能出现超过 &apos;1&apos; 个连续大写字母。" source="com.puppycrawl.tools.checkstyle.checks.naming.AbbreviationAsWordInNameCheck"/>
+<error line="42" severity="warning" message="Javadoc 第 0 个字符解析错误。解析 JAVADOC_TAG ，详情： no viable alternative at input &apos;   *&apos;" source="com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheck"/>
+<error line="59" severity="warning" message="缺少摘要javadoc。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
+<error line="68" column="3" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
 </file>
 <file name="E:\CS209-project-22fall-master\src\main\java\com\example\springproject\controller\IssueController.java">
 <error line="22" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
@@ -43,12 +35,9 @@
 <error line="7" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 </file>
 <file name="E:\CS209-project-22fall-master\src\main\java\com\example\springproject\entity\Commit.java">
-<error line="5" column="1" severity="warning" message="导入组之前的额外空行 &apos;java.sql.Date&apos;。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="5" column="1" severity="warning" message="导入语句&apos;java.sql.Date&apos; 字典顺序错误。应在&apos;lombok.Data&apos;之前。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="6" column="1" severity="warning" message="导入语句&apos;java.sql.Timestamp&apos; 字典顺序错误。应在&apos;lombok.Data&apos;之前。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="8" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
-<error line="12" column="16" severity="warning" message="Member name &apos;commit_date&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-<error line="14" column="21" severity="warning" message="Member name &apos;commit_time&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
+<error line="8" severity="warning" message="Javadoc的第一句缺少一个结束时期。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck"/>
+<error line="15" column="16" severity="warning" message="Member name &apos;commit_date&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
+<error line="17" column="21" severity="warning" message="Member name &apos;commit_time&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
 </file>
 <file name="E:\CS209-project-22fall-master\src\main\java\com\example\springproject\entity\Connection1.java">
 <error line="5" column="1" severity="warning" message="导入组之前的额外空行 &apos;java.sql.Date&apos;。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
@@ -116,10 +105,7 @@
 <error line="11" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 </file>
 <file name="E:\CS209-project-22fall-master\src\main\java\com\example\springproject\service\impl\ReleaseServiceImpl.java">
-<error line="4" column="1" severity="warning" message="导入语句&apos;com.example.springproject.entity.Connection3&apos; 字典顺序错误。应在&apos;com.example.springproject.entity.Release&apos;之前。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="10" column="1" severity="warning" message="导入组之前的额外空行 &apos;java.util.List&apos;。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="10" column="1" severity="warning" message="导入语句&apos;java.util.List&apos; 字典顺序错误。应在&apos;org.springframework.stereotype.Service&apos;之前。" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
-<error line="12" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="14" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
 </file>
 <file name="E:\CS209-project-22fall-master\src\main\java\com\example\springproject\service\impl\StartServiceImpl.java">
 <error line="8" column="1" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>

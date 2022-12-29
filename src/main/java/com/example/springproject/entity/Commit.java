@@ -1,10 +1,13 @@
 package com.example.springproject.entity;
 
-import lombok.Data;
-
 import java.sql.Date;
 import java.sql.Timestamp;
+import lombok.Data;
 
+
+/**
+ * Javadoc
+ */
 @Data
 public class Commit {
 

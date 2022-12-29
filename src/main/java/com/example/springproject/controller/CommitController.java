@@ -7,6 +7,12 @@ import com.example.springproject.entity.Commit;
 import com.example.springproject.entity.Connection1;
 import com.example.springproject.entity.Connection2;
 import com.example.springproject.service.CommitService;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -15,21 +21,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.ArrayList;
-
+/**
+ * javadoc.
+ */
 @CrossOrigin
 @RestController
 @RequestMapping("/commit")
 public class CommitController {
 
+  /**
+   * javadoc.
+   */
   @Autowired
   private CommitService commitService;
 
+  /**
+   *
+   * @param url
+   * @return
+   * @throws IOException
+   */
   @GetMapping("/store-commits")
   public String storeCommits(@RequestParam String url) throws IOException {
     List<Commit> commits = getRawJson(url);
@@ -45,6 +56,10 @@ public class CommitController {
     return commitService.getCommitNumByTime();
   }
 
+  /**
+   *
+   * @return fsadfs
+   */
   @GetMapping("/get-developer-commitNum")
   public List<Connection2> getCommitNumByDeveloper() {
     return commitService.getCommitNumByDeveloper();
@@ -59,9 +74,9 @@ public class CommitController {
       pageNum++;
       String urlWithPage = url + "&page=" + pageNum;
 
-      URL restURL = new URL(urlWithPage);
+      URL restUrl = new URL(urlWithPage);
 
-      HttpURLConnection conn = (HttpURLConnection) restURL.openConnection();
+      HttpURLConnection conn = (HttpURLConnection) restUrl.openConnection();
 
       conn.setRequestMethod("GET"); // POST GET PUT DELETE
       // Bearer后面为授权用的github token，请改成自己用的
